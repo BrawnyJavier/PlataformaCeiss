@@ -4,10 +4,10 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Classes
 {
-    public enum Career
-    {
-        SIS,IDS,CYB
-    }
+    //public enum Career
+    //{
+    //    SIS,IDS,CYB
+    //}
     [Table("STUDENTS")]
     public class Student
     {
@@ -33,6 +33,9 @@ namespace Classes
         public DateTime CreationDate { get; set; }
         public string Password { get; set; }
         public Byte[] Salt { get; set; }
+
+        [Required,ForeignKey("Career")]
+        public int CareerID { get; set; }
         public Career Career { get; set; }
     }
 }

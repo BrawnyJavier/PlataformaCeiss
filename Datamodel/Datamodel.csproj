@@ -52,6 +52,14 @@
     <Compile Include="Migrations\201711041548246_Initial Migration.Designer.cs">
       <DependentUpon>201711041548246_Initial Migration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201711181428210_Adding Careers Table.cs" />
+    <Compile Include="Migrations\201711181428210_Adding Careers Table.Designer.cs">
+      <DependentUpon>201711181428210_Adding Careers Table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711181631261_Populating Careers table.cs" />
+    <Compile Include="Migrations\201711181631261_Populating Careers table.Designer.cs">
+      <DependentUpon>201711181631261_Populating Careers table.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -68,6 +76,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201711041548246_Initial Migration.resx">
       <DependentUpon>201711041548246_Initial Migration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711181428210_Adding Careers Table.resx">
+      <DependentUpon>201711181428210_Adding Careers Table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711181631261_Populating Careers table.resx">
+      <DependentUpon>201711181631261_Populating Careers table.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
